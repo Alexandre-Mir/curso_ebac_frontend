@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	background-color: #3d8d7a;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-size: 2.5em;
+}
+
+input,
+button {
+	padding: 10px;
+	margin: 0;
+	border: none;
+	border-radius: 3px;
+	font-family: inherit;
+}
+
+header button {
+	background-color: #b3d8a8;
+	color: #3d8d7a;
+	cursor: pointer;
+	font-weight: bold;
+	width: 40px;
+}
+
+.tarefa {
+	color: #3d8d7a;
+	font-weight: 500;
+	text-align: center;
+}
+
+.tarefa:hover {
+	color: #a3d1c6;
+	cursor: pointer;
+}
+
+.checked {
+	text-decoration: line-through;
+	color: gray;
+}
