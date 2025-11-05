@@ -1,0 +1,55 @@
+/* main.css (transcribed to BEM)
+   Block: produtos
+   Elements: produtos__item, produtos__imagem, produtos__nome, produtos__descricao
+   Modifier: produtos__item--destaque
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.produtos {
+	max-width: 640px;
+	width: 100%;
+	margin: 56px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1%;
+}
+
+.produtos__item {
+	background: #fff;
+	padding: 8px;
+	text-align: center;
+}
+
+.produtos__imagem {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.produtos__nome {
+	font-size: 1.2em;
+	margin: 8px 0;
+}
+
+.produtos__descricao {
+	color: gray;
+}
+
+.produtos__item--destaque {
+	border: 2px solid gold;
+	background-color: #ffff42;
+}
+
+/* Responsive: stack items on small screens */
+@media (max-width: 520px) {
+	.produtos {
+		grid-template-columns: 1fr;
+	}
+}
